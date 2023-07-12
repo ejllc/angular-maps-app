@@ -13,8 +13,8 @@ export class MiniMapComponent {
 
 
   ngAfterViewInit() {
-    if( !this.divMap?.nativeElement ) throw "Map Div not found";
-    if( !this.lngLat ) throw "LngLat can't be null";
+    if (!this.divMap?.nativeElement) throw "Map Div not found";
+    if (!this.lngLat) throw "LngLat can't be null";
 
     const map = new Map({
       container: this.divMap.nativeElement, // container ID
@@ -25,8 +25,8 @@ export class MiniMapComponent {
     });
 
     new Marker()
-      .setLngLat( this.lngLat )
-      .addTo( map )
+      .setLngLat(this.lngLat)
+      .addTo(map)
 
   }
 

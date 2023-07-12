@@ -13,7 +13,7 @@ export class FullScreenPageComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
 
-    if ( !this.divMap ) throw 'El elemento HTML no fue encontrado';
+    if (!this.divMap) throw 'El elemento HTML no fue encontrado';
 
     const map = new Map({
       container: this.divMap.nativeElement, // container ID
